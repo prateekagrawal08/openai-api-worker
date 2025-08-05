@@ -6,6 +6,7 @@
 		<title>Hello, World!</title>
 	</head>
 	<body>
+	<main>
 		<h1 id="heading"></h1>
 		<p>This page comes from a static asset stored at `public/index.html` as configured in `wrangler.jsonc`.</p>
 		<button id="button" type="button">Fetch a random UUID</button>
@@ -28,5 +29,36 @@
 					});
 			});
 		</script>
+
+			<section class="action-panel">
+				<form id="ticker-input-form">
+					<label for="ticker-input"> Add up to 3 stock tickers below to get a super accurate stock predictions report👇 </label>
+					<div class="form-input-control">
+						<input type="text" id="ticker-input" placeholder="MSFT">
+						<button class="add-ticker-btn">
+							<img src="images/add.svg" class="add-ticker-svg" alt="add">
+						</button>
+					</div>
+				</form>
+				<p class="ticker-choice-display">
+					Your tickers will appear here...
+				</p>
+				<button class="generate-report-btn" type="button" disabled>
+					Generate Report
+				</button>
+				<p class="tag-line">Always correct 15% of the time!</p>
+			</section>
+			<section class="loading-panel">
+				<img src="images/loader.svg" alt="loading">
+				<div id="api-message">Querying Stocks API...</div>
+			</section>
+			<section class="output-panel">
+				<h2>Your Report 😜</h2>
+			</section>
+		</main>
+		<footer>
+			&copy; This is not real financial advice!
+		</footer>
+		<script src="index.js" type="module"></script>
 	</body>
 </html>
