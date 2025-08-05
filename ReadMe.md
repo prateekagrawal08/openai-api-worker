@@ -96,4 +96,8 @@ npx wrangler deploy
 ---
 
 > **Happy building!**
-> For questions or contributions, open an issue or pull request.
+> For questions or contributions, open an issue or pull request.\
+<img width="836" height="628" alt="Screenshot 2025-08-06 at 03 46 07" src="https://github.com/user-attachments/assets/1a1d782c-85b0-49ee-8f57-b1833786306f" />
+
+
+
