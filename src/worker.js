@@ -7,6 +7,7 @@
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
+const tickersArr = []
 
 export default {
 	async fetch(request, env, ctx) {
@@ -21,3 +22,5 @@ export default {
 		}
 	},
 };
+
+
